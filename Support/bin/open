@@ -2,8 +2,6 @@
 # encoding: UTF-8
 
 content = STDIN.read
-puts "pula"
-puts content
 
 m = content.match(/X-GitLab-Project-Path:\s+(.*)/i)
 if m
