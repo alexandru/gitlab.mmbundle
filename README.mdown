@@ -1,4 +1,15 @@
-# Installation
+# GitLab integration for MailMate
+
+This is a small plugin for [MailMate](https://freron.com/),
+integrating it with [GitLab](https://about.gitlab.com/).
+
+The current functionality provided is a command for opening 
+GitLab links from notification emails (merge requests, issues):
+
+- Menu: Command → GitLab → Open in Browser
+- Keyboard shortcut: ^O
+
+## Installation
 
 This bundle isn't part of the offician distribution, so you can
 install it manually like this:
@@ -9,7 +20,7 @@ cd ~/Library/Application\ Support/MailMate/Bundles
 git clone https://github.com/alexandru/gitlab.mmbundle
 ```
 
-# License
+## License
 
 If not otherwise specified (see below), files in this repository fall under the following license:
 
