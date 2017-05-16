@@ -1,0 +1,13 @@
+#!/usr/bin/ruby -w
+# encoding: UTF-8
+
+content = STDIN.read
+puts "pula"
+puts content
+
+m = content.match(/X-GitLab-Project-Path:\s+(.*)/i)
+if m
+	path = m[1]
+	m = content.match(/(https?:\/\/.*?#{path}\S+)/i)
+	if m; system("open", m[1]); end
+end

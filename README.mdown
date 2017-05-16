@@ -1,6 +1,13 @@
 # Installation
 
-You can install this bundle in MailMate by opening the preferences and going to the bundles tab. After installation it will be automatically updated for you.
+This bundle isn't part of the offician distribution, so you can
+install it manually like this:
+
+```
+mkdir -p ~/Library/Application\ Support/MailMate/Bundles 
+cd ~/Library/Application\ Support/MailMate/Bundles 
+git clone https://github.com/alexandru/gitlab.mmbundle
+```
 
 # License
 

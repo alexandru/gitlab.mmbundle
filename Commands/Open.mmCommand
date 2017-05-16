@@ -1,15 +1,8 @@
 {
 	name          = 'Open in Browser';
-	input         = 'canonical';
+	input         = 'raw';
 	keyEquivalent = "^o";
-	conditions    = "x-github-recipient exists";
-	uuid          = '2DC4E437-9DD1-4B39-AAFD-86A3529252A2';
-	command       =
-
-'#!/bin/bash
-url=`egrep -o "https://github\.com/[^ ]+" | tail -1`
-if [ $url != "" ]; then
-	open "$url"
-fi
-';
+	conditions    = "x-gitlab-project-path exists";
+	uuid          = '3BAD8220-909C-478D-B36A-F83730BE631E';
+	command       = '#!/bin/bash\n"$MM_BUNDLE_SUPPORT/bin/open"';
 }
